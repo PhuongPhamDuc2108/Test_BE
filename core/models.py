@@ -9,8 +9,14 @@ class Customer(models.Model):
         return self.name
 
 class Product(models.Model):
+    STATUS_CHOICES = [
+        ('phone', 'Phone'),
+        ('laptop', 'Laptop'),
+        ('pc', 'PC'),
+    ]
     name = models.CharField(max_length=255)
     description = models.TextField()
+    type_pro = models.CharField(max_length=20, choices=STATUS_CHOICES, default='todo')
     price = models.DecimalField(max_digits=10, decimal_places=2)
 
     def __str__(self):
@@ -37,3 +43,6 @@ class TaskBoard(models.Model):
 
     def __str__(self):
         return self.title
+    
+
+
