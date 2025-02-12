@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = env('SECRET_KEY')
 DEBUG = env('DEBUG') == 'True'
-ALLOWED_HOSTS = ['test-be-1.zgtf.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['test-be-1.zgtf.onrender.com']
 
 
 
