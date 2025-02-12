@@ -33,6 +33,7 @@ ALLOWED_HOSTS = env('ALLOWED_HOSTS').split(',')
 
 
 
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',  
