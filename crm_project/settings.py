@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'crm_project.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
-import dj_database_url
+
 
 
 DATABASES = {
