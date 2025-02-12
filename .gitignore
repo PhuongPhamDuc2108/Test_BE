@@ -1,0 +1,26 @@
+# Thư mục chứa các tệp biên dịch Python
+__pycache__/
+*.py[cod]
+
+# Thư mục chứa các tệp tạm của môi trường ảo
+venv/
+env/
+*.env
+
+# Thư mục cơ sở dữ liệu SQLite (nếu bạn sử dụng SQLite)
+db.sqlite3
+
+# Thư mục các tệp tạm thời của các IDE
+.idea/
+.vscode/
+
+# Thư mục chứa các tệp static khi triển khai
+/static/
+
+# Tệp cấu hình của hệ điều hành
+.DS_Store
+Thumbs.db
+
+# Các tệp cấu hình của hệ thống IDE hoặc trình soạn thảo văn bản
+*.sublime-workspace
+*.sublime-project
