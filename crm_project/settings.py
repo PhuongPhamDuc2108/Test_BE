@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-5cw1&g^7s5jbt05-*o0@h2k2dw=5ejet3t0j_sz6xxsto#0&n(
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['test-be-uok2.onrender.com', 'localhost', '127.0.0.1']
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
