@@ -9,4 +9,5 @@ python-dotenv
 requests
 djangorestframework-simplejwt
 drf_yasg
+drf_spectacular
 django-environ
