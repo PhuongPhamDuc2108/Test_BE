@@ -1,4 +1,10 @@
-flask==2.0.2
-requests==2.26.0
+Django>=4.0,<5.0
 gunicorn
+djangorestframework
+djangorestframework-jwt
+pyjwt
+psycopg2
+django-cors-headers
+python-dotenv
+requests
 
