@@ -141,6 +141,7 @@ STATIC_URL = '/static/'
 
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
 
 
 # Default primary key field type
