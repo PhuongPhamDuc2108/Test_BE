@@ -11,3 +11,4 @@ djangorestframework-simplejwt
 drf_yasg
 drf_spectacular
 django-environ
+whitenoise
