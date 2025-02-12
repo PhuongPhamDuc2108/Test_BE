@@ -15,16 +15,27 @@ router.register(r'products', ProductViewSet)
 router.register(r'employees', EmployeeViewSet)
 router.register(r'task-boards', TaskBoardViewSet)
 
-
+schema_view = get_schema_view(
+    openapi.Info(
+        title="Your API",
+        default_version='v1',
+        description="Test description",
+        terms_of_service="https://www.google.com/policies/terms/",
+        contact=openapi.Contact(email="contact@yourapi.local"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
-    path('schema/', SpectacularAPIView.as_view(), name='schema'),  # Đầu ra của OpenAPI schema (JSON)
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-ui'),
 
-    # Swagger UI
-    path('swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),  # Swagger UI
+    # OpenAPI schema
+    path('schema/', schema_view.with_ui('swagger', cache_timeout=0), name='swagger-schema'),
 ]
 

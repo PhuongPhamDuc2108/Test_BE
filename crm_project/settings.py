@@ -66,12 +66,7 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'crm_project.urls'
 
-SPECTACULAR_SETTINGS = {
-    'TITLE': 'My API',  
-    'DESCRIPTION': 'API documentation for my Django app',  
-    'VERSION': '1.0.0',  
-    'SERVE_INCLUDE_SCHEMA': False,  
-}
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
